@@ -3,7 +3,7 @@
 Little Anti-Cheat is a free and open source anti-cheat for source games, and runs on SourceMod.\
 It was originally developed for some secret servers I had back in the day.\
 But, as I quit cheating and quit having servers, I decided to release this project to help the community out.\
-This Anti-Cheat is by no means perfect, and it is bypassable to some extent, but it should still be a nice alternative (or just complementary) to SMAC (SourceMod Anti-Cheat).
+This Anti-Cheat is by no means perfect, and it is bypassable to some extent, but it should still be helpful in dealing with cheaters :)
 
 ### Current Cheat Detections:
  - Angle-Cheats (Legit Anti-Backstab (TF2), Basic Anti-Aims and Duckspeed).
@@ -13,41 +13,50 @@ This Anti-Cheat is by no means perfect, and it is bypassable to some extent, but
  - Basic Projectile and Hitscan Aimbot.
  - Basic Aimlock.
  - Anti-Duck-Delay/FastDuck (CS:GO only).
+ - Newlines in names.
 
 ### Misc features:
  - Angle-Cheats Patch (Patches Angle-Cheats from working).
  - Max Interp Kicker (Kicks players for attempting to exploit interp (cl_interp 0.5)).
  - Max Ping Kicker (Kicks players for having too high ping (Disabled by default)).
  - Backtrack Patch (Patches backtrack cheats (Disabled by default)).
+ - Macro detection.
+ - Invalid name detection.
+ - Invalid characters in chat patch (+ chat clear exploit fix).
 
 ### Supported Games:
  - [TF2] Team Fortress 2
  - [CS:GO] Counter-Strike:Global Offensive
+ - [CS:S] Counter-Strike:Source
  - [L4D2] Left 4 Dead 2
  - [L4D] Left 4 Dead
  - [DoD:S] Day of Defeat: Source
 
 ### Untested, but should work in:
- - [CS:S] Counter-Strike:Source
  - [HL2:DM] Half-Life 2:DeathMatch
 
 ## Non-Steam versions / CS:S v34 / CS:S v91 / ETC...
 Non-Steam versions (IE: Cracks) **ARE NOT SUPPORTED!**\
-It seems like a few people have tried to use Lilac on cracked/non-steam versions of Counter-Strike:Source, and have reported bugs.\
 I am sorry to say, but non-steam versions aren't supported.\
-This is because of technical problems with cracks (as they tend to be of older versions of the game) and the fact that I don't want to support piracy.
+This is because of technical problems with cracks, as they tend to be of older versions of the game, which means they'll have bugs that can conflict with some cheat detections.\
+And I just don't want to support piracy.\
+I also just don't want to download sketchy unofficial cracked versions of games...
 
-I'm sorry, but Little Anti-Cheat will not work for cracks/non-steam versions.\
-And support will never come from me officially.
+So Little Anti-Cheat may not work out of the box for cracked versions of games.\
+That said, I've decided to be a little helpful based on feedback from others.
 
-The same goes for other games, non-steam / cracks aren't supported.
+For Non-Steam/Cracked version of CS:S (like v34 or v91), Angle-Cheat detections won't work.\
+You can fix this by updating these ConVars: `lilac_angles 0` and `lilac_angles_patch 0`.\
+These **HAVE** to be disabled.
 
 ### Credits / Special Thanks to:
  - J_Tanzanite... Yeah I'm crediting myself for writing this AC...
+ - Azalty, for being (rightly) stubborn regarding an issue and for contributing database logging.
  - foon, for fixing sourcebans++ not working (https://forums.alliedmods.net/showthread.php?p=2689297#post2689297).
  - Bottiger, for fixing this plugin not working in CS:GO and general criticisms.
  - MAGNAT2645 for suggesting a cleaner method of handling convar changes.
  - Larry/LarryBrains for informing me of false Angle-Cheat detections in L4D2.
+ - VintagePC (https://github.com/vintagepc) for SourceIRC support and basepath fix.
 
 ### Current languages supported:
  - Simplified Chinese (by RoyZ https://github.com/RoyZ-CSGO ^-^).
@@ -63,7 +72,9 @@ The same goes for other games, non-steam / cracks aren't supported.
  - Spanish (by ALEJANDRO ^-^).
  - Ukrainian (by panikajo ;D).
  - Polish (by https://github.com/qawery-just-sad).
- - Turkish (by ShiroNje and R3nzTheCodeGOD).\
+ - Turkish (by ShiroNje and R3nzTheCodeGOD).
+ - Hungarian (by The Solid Lad).
+ - Swedish (by Teamkiller324).\
 \
 I do hope to add more languages in the future.\
 But at least you can add or improve on the translations already provided.\
